@@ -41,12 +41,16 @@ const Product = () => {
                     <Card.Img
                         variant='top'
                         src={product.image}
-                        style={{ width: '100px', height: '130px' }}
+                        style={{
+                            width: '100px',
+                            height: '130px',
+                            marginTop: '10px',
+                        }}
                     />
                 </div>
                 <Card.Body>
                     <Card.Title>{product.title}</Card.Title>
-                    <Card.Text>INR: {product.price}</Card.Text>
+                    <Card.Text>Price: {product.price}</Card.Text>
                 </Card.Body>
                 <Card.Footer style={{ backgroundColor: 'white' }}>
                     <Button
